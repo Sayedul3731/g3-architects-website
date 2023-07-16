@@ -118,6 +118,7 @@ nav li a{
     font-size: 1.25rem;
     font-weight: 600;
     color: #131313;
+    margin-bottom: 10px;
 }
 .btn{
     padding: 45px 42px;
@@ -150,6 +151,18 @@ nav li a{
         .featured-img{
             grid-template-columns: repeat(1,1fr);
         }
+        .another-featured{
+            flex-direction: column;
+            margin: 30px;
+            gap: 30px;
+        }
+        .another-featured-img img{
+            width: 100%;
+        }
+        .btn{
+            padding: 20px 25px;
+            margin-left: 100px;
+        }
 }
 /* tablet or medium devices  */
 @media screen and (min-width:576px) and (max-width:960px) {
@@ -171,5 +184,17 @@ nav li a{
     }
     .featured-img{
         grid-template-columns: repeat(2,1fr);
+    }
+    .another-featured{
+        flex-direction: column;
+        margin: 30px;
+        gap: 30px;
+    }
+    .another-featured-img img{
+        width: 100%;
+    }
+    .btn{
+        padding: 20px 25px;
+        margin-left: 250px;
     }
 }
