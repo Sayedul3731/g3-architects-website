@@ -92,6 +92,42 @@ nav li a{
     color: #727272;
     font-weight: 500px;
 }
+/* another featured styles here  */
+.another-featured{
+    display: flex;
+    margin: 0px 240px 130px 240px;
+    gap: 145px;
+}
+.another-fc-title{
+    font-size: 3rem;
+    font-weight: 700px;
+    color: #131313;
+    padding-left: 24px;
+    border-left: 5px solid #FF900E;
+    margin-bottom: 24px;
+}
+.desktop-version, .drag, .awesome{
+    margin-bottom: 20px;
+}
+.another-fc-description, .desktop-description, .drag-description, .super-description, .awesome-description{
+    color: #727272;
+    line-height: 26px;
+    margin-bottom: 60px;
+}
+.desktop-title, .drag-title, .super-title, .awesome-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #131313;
+}
+.btn{
+    padding: 45px 42px;
+    margin-left: -90px;
+    margin-top: -100px;
+}
+.years{
+    font-size: 4rem;
+    font-weight: 700px;
+}
 /* responsive styles here  */
 /* small devices  */
 @media screen and (max-width:576px) {
