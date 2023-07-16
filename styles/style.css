@@ -1,5 +1,5 @@
 /* word sans fonts from google fonts  */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Roboto:wght@400;500;700;900&family=Work+Sans:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Roboto:wght@400;500;700;900&family=Work+Sans:wght@400;500;600;700;800&display=swap');
 /* shared styles here  */
 *{
     font-family: 'Open Sans', sans-serif;
@@ -86,6 +86,11 @@ nav li a{
     color: #727272;
     margin-top: 24px;
     margin-bottom: 32px;
+    line-height: 26px;
+}
+.quick-list{
+    color: #727272;
+    font-weight: 500px;
 }
 /* responsive styles here  */
 /* small devices  */
@@ -102,6 +107,13 @@ nav li a{
         nav > ul{
             flex-direction: column;
         }
+        .featured{
+            flex-direction: column;
+            margin: 20px;
+        }
+        .featured-img{
+            grid-template-columns: repeat(1,1fr);
+        }
 }
 /* tablet or medium devices  */
 @media screen and (min-width:576px) and (max-width:960px) {
@@ -116,5 +128,12 @@ nav li a{
     }
     nav > ul{
         flex-direction: column;
+    }
+    .featured{
+        flex-direction: column;
+        margin: 40px;
+    }
+    .featured-img{
+        grid-template-columns: repeat(2,1fr);
     }
 }
