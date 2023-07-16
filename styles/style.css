@@ -5,6 +5,8 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Work Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 .btn-primary{
     padding: 20px 25px;
@@ -13,6 +15,7 @@
     border: 0px;    
     color: white;
     font-size: 1.25rem;
+    cursor: pointer;
 }
 /* header styles here  */
 header{
@@ -54,6 +57,38 @@ nav li a{
     color: #727272;
     margin-bottom: 32px;
 }
-.banner-img{
+.banner img{
     margin-top: 50px;
+    width: 100%;
+}
+/* responsive styles here  */
+/* small devices  */
+@media screen and (max-width:576px) {
+        header{
+            padding: 20px;
+        }
+        header nav {
+            flex-direction: column;
+        }
+        .banner-content{
+            width: 100%;
+        }
+        nav > ul{
+            flex-direction: column;
+        }
+}
+/* tablet or medium devices  */
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 20px;
+    }
+    header nav {
+        flex-direction: column;
+    }
+    .banner-content{
+        width: 100%;
+    }
+    nav > ul{
+        flex-direction: column;
+    }
 }
