@@ -132,6 +132,54 @@ nav li a{
     font-size: 4rem;
     font-weight: 700px;
 }
+/* facts styles here  */
+.facts-container{
+   margin: 0px 240px 130px 240px;
+}
+.facts-title{
+    font-size: 3rem;
+    font-weight: 700px;
+    color: #131313;
+}
+.facts-description{
+    width: 540px;
+    color: #727272;
+    margin-top: 24px;
+    margin-bottom: 100px;
+}
+.facts-icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+.facts-icon{
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgb(253, 180, 21);
+    border-radius: 8px;
+}
+.facts-icon img{
+    margin-top: 75px;
+    width: 50px;
+    height: 50px;
+}
+.icon-title{
+    width: 130px;
+    height: auto;
+    font-size: 2.8rem;
+    font-weight: 600px;
+    margin-left: 60px;
+    margin-top: 10px;
+    color: #424242;
+}
+.icon-description{
+    font-size: 20px;
+    font-weight: 600px;
+    color: #727272;
+}
+
 /* responsive styles here  */
 /* small devices  */
 @media screen and (max-width:576px) {
@@ -170,6 +218,15 @@ nav li a{
         .years{
             font-size: 2rem;
         }
+        .facts-container{
+            margin: 50px 30px 50px 30px;
+        }
+        .facts-icons{
+            flex-direction: column;
+        }
+        .facts-content, .facts-description{
+            width: 100%;
+        }
 }
 /* tablet or medium devices  */
 @media screen and (min-width:576px) and (max-width:960px) {
@@ -203,5 +260,13 @@ nav li a{
     .btn{
         padding: 20px 25px;
         margin-left: 250px;
+    }
+    .facts-container{
+        margin: 80px 40px 80px 40px;
+        padding-left: 80px;
+    }
+    .facts-icons{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
     }
 }
